@@ -25,25 +25,25 @@ pub enum Language {
   Vietnamese,
 }
 
-impl Into<Language> for Lang_vendor {
-  fn into(self) -> Language {
-    match self {
-      Self::Ara => Language::Arabic,
-      Self::Nld => Language::Dutch,
-      Self::Eng => Language::English,
-      Self::Fra => Language::French,
-      Self::Deu => Language::German,
-      Self::Hin => Language::Hindi,
-      Self::Ita => Language::Italian,
-      Self::Jpn => Language::Japanese,
-      Self::Kor => Language::Korean,
-      Self::Cmn => Language::Mandarin,
-      Self::Por => Language::Portuguese,
-      Self::Rus => Language::Russian,
-      Self::Spa => Language::Spanish,
-      Self::Swe => Language::Swedish,
-      Self::Tur => Language::Turkish,
-      Self::Vie => Language::Vietnamese,
+impl From<Lang_vendor> for Language {
+  fn from(val: Lang_vendor) -> Self {
+    match val {
+      Lang_vendor::Ara => Language::Arabic,
+      Lang_vendor::Nld => Language::Dutch,
+      Lang_vendor::Eng => Language::English,
+      Lang_vendor::Fra => Language::French,
+      Lang_vendor::Deu => Language::German,
+      Lang_vendor::Hin => Language::Hindi,
+      Lang_vendor::Ita => Language::Italian,
+      Lang_vendor::Jpn => Language::Japanese,
+      Lang_vendor::Kor => Language::Korean,
+      Lang_vendor::Cmn => Language::Mandarin,
+      Lang_vendor::Por => Language::Portuguese,
+      Lang_vendor::Rus => Language::Russian,
+      Lang_vendor::Spa => Language::Spanish,
+      Lang_vendor::Swe => Language::Swedish,
+      Lang_vendor::Tur => Language::Turkish,
+      Lang_vendor::Vie => Language::Vietnamese,
     }
   }
 }

@@ -4,8 +4,6 @@
 
 [whichlang](https://github.com/quickwit-oss/whichlang) binding for Node.js.
 
-
-
 ## Install this package
 
 ```shell
@@ -76,7 +74,6 @@ export const enum Lang {
   Vie = 'Vie',
 }
 export function detectLang(text: string, threeLetters?: boolean | undefined | null): Lang | Language
-
 ```
 
 ## Usage
