@@ -11,7 +11,8 @@
     "N-API",
     "Rust",
     "node-addon",
-    "node-addon-api"
+    "node-addon-api",
+    "whichlang"
   ],
   "files": [
     "index.d.ts",
