@@ -1,8 +1,16 @@
 import test from 'ava'
 
-import { plus100 } from '../index'
+import { detectLang, Language, Lang } from '../index'
 
-test('sync function from native code', (t) => {
-  const fixture = 42
-  t.is(plus100(fixture), fixture + 100)
-})
+const fixture = [
+  ['见到你很高兴', Language.Mandarin, Lang.Cmn],
+  ['hello world', Language.English, Lang.Eng],
+  ['ネムルバカ', Language.Japanese, Lang.Jpn],
+] as const
+
+for (const [input, expected, expectedThreeLetters] of fixture) {
+  test(`detect ${expected}`, (t) => {
+    t.is(detectLang(input), expected)
+    t.is(detectLang(input, true), expectedThreeLetters)
+  })
+}

@@ -1,21 +1,18 @@
 import b from 'benny'
+import { detectLang as detectLangWhatlang } from 'whatlang-node'
 
-import { plus100 } from '../index'
-
-function add(a: number) {
-  return a + 100
-}
+import { detectLang } from '../index'
 
 async function run() {
   await b.suite(
-    'Add 100',
+    'detect lang',
 
-    b.add('Native a + 100', () => {
-      plus100(10)
+    b.add('whichlang node', () => {
+      detectLang('见到你很高兴')
     }),
 
-    b.add('JavaScript a + 100', () => {
-      add(10)
+    b.add('whatlang node', () => {
+      detectLangWhatlang('见到你很高兴')
     }),
 
     b.cycle(),

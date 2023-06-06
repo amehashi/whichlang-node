@@ -132,31 +132,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@napi-rs/package-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@napi-rs/package-template@workspace:."
-  dependencies:
-    "@napi-rs/cli": ^2.14.6
-    "@swc-node/register": ^1.5.5
-    "@swc/core": ^1.3.32
-    "@taplo/cli": ^0.5.2
-    "@typescript-eslint/eslint-plugin": ^5.50.0
-    "@typescript-eslint/parser": ^5.50.0
-    ava: ^5.1.1
-    benny: ^3.7.1
-    chalk: ^5.2.0
-    eslint: ^8.33.0
-    eslint-config-prettier: ^8.6.0
-    eslint-plugin-import: ^2.27.5
-    eslint-plugin-prettier: ^4.2.1
-    husky: ^8.0.3
-    lint-staged: ^13.1.0
-    npm-run-all: ^4.1.5
-    prettier: ^2.8.3
-    typescript: ^5.0.0
-  languageName: unknown
-  linkType: soft
-
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -4425,6 +4400,145 @@ __metadata:
   languageName: node
   linkType: hard
 
+"whatlang-node-android-arm-eabi@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-android-arm-eabi@npm:0.1.0"
+  conditions: os=android & cpu=arm
+  languageName: node
+  linkType: hard
+
+"whatlang-node-android-arm64@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-android-arm64@npm:0.1.0"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"whatlang-node-darwin-arm64@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-darwin-arm64@npm:0.1.0"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"whatlang-node-darwin-x64@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-darwin-x64@npm:0.1.0"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"whatlang-node-freebsd-x64@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-freebsd-x64@npm:0.1.0"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"whatlang-node-linux-arm-gnueabihf@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-linux-arm-gnueabihf@npm:0.1.0"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"whatlang-node-linux-arm64-gnu@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-linux-arm64-gnu@npm:0.1.0"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"whatlang-node-linux-arm64-musl@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-linux-arm64-musl@npm:0.1.0"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"whatlang-node-linux-x64-gnu@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-linux-x64-gnu@npm:0.1.0"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"whatlang-node-linux-x64-musl@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-linux-x64-musl@npm:0.1.0"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"whatlang-node-win32-arm64-msvc@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-win32-arm64-msvc@npm:0.1.0"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"whatlang-node-win32-ia32-msvc@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-win32-ia32-msvc@npm:0.1.0"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"whatlang-node-win32-x64-msvc@npm:0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node-win32-x64-msvc@npm:0.1.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"whatlang-node@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "whatlang-node@npm:0.1.0"
+  dependencies:
+    whatlang-node-android-arm-eabi: 0.1.0
+    whatlang-node-android-arm64: 0.1.0
+    whatlang-node-darwin-arm64: 0.1.0
+    whatlang-node-darwin-x64: 0.1.0
+    whatlang-node-freebsd-x64: 0.1.0
+    whatlang-node-linux-arm-gnueabihf: 0.1.0
+    whatlang-node-linux-arm64-gnu: 0.1.0
+    whatlang-node-linux-arm64-musl: 0.1.0
+    whatlang-node-linux-x64-gnu: 0.1.0
+    whatlang-node-linux-x64-musl: 0.1.0
+    whatlang-node-win32-arm64-msvc: 0.1.0
+    whatlang-node-win32-ia32-msvc: 0.1.0
+    whatlang-node-win32-x64-msvc: 0.1.0
+  dependenciesMeta:
+    whatlang-node-android-arm-eabi:
+      optional: true
+    whatlang-node-android-arm64:
+      optional: true
+    whatlang-node-darwin-arm64:
+      optional: true
+    whatlang-node-darwin-x64:
+      optional: true
+    whatlang-node-freebsd-x64:
+      optional: true
+    whatlang-node-linux-arm-gnueabihf:
+      optional: true
+    whatlang-node-linux-arm64-gnu:
+      optional: true
+    whatlang-node-linux-arm64-musl:
+      optional: true
+    whatlang-node-linux-x64-gnu:
+      optional: true
+    whatlang-node-linux-x64-musl:
+      optional: true
+    whatlang-node-win32-arm64-msvc:
+      optional: true
+    whatlang-node-win32-ia32-msvc:
+      optional: true
+    whatlang-node-win32-x64-msvc:
+      optional: true
+  checksum: 4c0dcc6a9120cfe02f98d22c26ed848705309357bc6192fc73a09173de415a752e2884ff1b4046060d7ff55b5f550d805391e8f6b0c9c1e201d70e241b08b9ba
+  languageName: node
+  linkType: hard
+
 "which-boxed-primitive@npm:^1.0.2":
   version: 1.0.2
   resolution: "which-boxed-primitive@npm:1.0.2"
@@ -4473,6 +4587,32 @@ __metadata:
   checksum: 1a5c563d3c1b52d5f893c8b61afe11abc3bab4afac492e8da5bde69d550de701cf9806235f20a47b5c8fa8a1d6a9135841de2596535e998027a54589000e66d1
   languageName: node
   linkType: hard
+
+"whichlang-node@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "whichlang-node@workspace:."
+  dependencies:
+    "@napi-rs/cli": ^2.14.6
+    "@swc-node/register": ^1.5.5
+    "@swc/core": ^1.3.32
+    "@taplo/cli": ^0.5.2
+    "@typescript-eslint/eslint-plugin": ^5.50.0
+    "@typescript-eslint/parser": ^5.50.0
+    ava: ^5.1.1
+    benny: ^3.7.1
+    chalk: ^5.2.0
+    eslint: ^8.33.0
+    eslint-config-prettier: ^8.6.0
+    eslint-plugin-import: ^2.27.5
+    eslint-plugin-prettier: ^4.2.1
+    husky: ^8.0.3
+    lint-staged: ^13.1.0
+    npm-run-all: ^4.1.5
+    prettier: ^2.8.3
+    typescript: ^5.0.0
+    whatlang-node: ^0.1.0
+  languageName: unknown
+  linkType: soft
 
 "wide-align@npm:^1.1.5":
   version: 1.1.5
