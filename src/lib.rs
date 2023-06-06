@@ -2,7 +2,7 @@
 
 use napi::bindgen_prelude::*;
 use napi_derive::napi;
-use whichlang::{detect_language, Lang as Lang_vendor};
+use whichlang::{detect_language as detect_vendor, Lang as Lang_vendor};
 
 #[napi(string_enum)]
 /// ISO language name
@@ -96,10 +96,14 @@ impl ToLang for Lang_vendor {
   }
 }
 
+#[napi(js_name = "detectLanguage")]
+/// detect language and return `Language`
+pub fn detect_language(text: String) -> Language {
+  detect_vendor(&text).into()
+}
+
 #[napi(js_name = "detectLang")]
-pub fn detect_lang(text: String, three_letters: Option<bool>) -> Either<Lang, Language> {
-  match three_letters {
-    Some(true) => Either::A(detect_language(&text).to_lang()),
-    _ => Either::B(detect_language(&text).into()),
-  }
+/// detect language and return `Lang`
+pub fn detect_lang(text: String) -> Lang {
+  detect_vendor(&text).to_lang()
 }

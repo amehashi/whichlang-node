@@ -1,5 +1,5 @@
-const { detectLang } = require('./index')
+const { detectLanguage } = require('./index')
 
-console.assert(detectLang('ネムルバカ') === 'Japanese', 'japanese')
+console.assert(detectLanguage('ネムルバカ') === 'Japanese', 'japanese')
 
 console.info('Simple test passed')

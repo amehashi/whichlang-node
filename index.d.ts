@@ -41,4 +41,7 @@ export const enum Lang {
   Tur = 'Tur',
   Vie = 'Vie',
 }
-export function detectLang(text: string, threeLetters?: boolean | undefined | null): Lang | Language
+/** detect language and return `Language` */
+export function detectLanguage(text: string): Language
+/** detect language and return `Lang` */
+export function detectLang(text: string): Lang
