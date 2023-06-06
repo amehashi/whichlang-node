@@ -234,9 +234,11 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { Language, Lang, detectLanguage, detectLang } = nativeBinding
+const { Language, Lang, detectLanguage, detectLang, LangISO6391, detectLangISO6391 } = nativeBinding
 
 module.exports.Language = Language
 module.exports.Lang = Lang
 module.exports.detectLanguage = detectLanguage
 module.exports.detectLang = detectLang
+module.exports.LangISO6391 = LangISO6391
+module.exports.detectLangISO6391 = detectLangISO6391
