@@ -1,6 +1,6 @@
 {
   "name": "whichlang-node",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "whichlang binding for Node.js",
   "main": "index.js",
   "repository": "https://github.com/amehashi/whichlang-node",
