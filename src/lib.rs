@@ -1,5 +1,9 @@
 #![deny(clippy::all)]
 
+#[cfg(not(all(target_os = "linux", target_env = "musl", target_arch = "aarch64")))]
+#[global_allocator]
+static ALLOC: mimalloc_rust::GlobalMiMalloc = mimalloc_rust::GlobalMiMalloc;
+
 use napi::bindgen_prelude::*;
 use napi_derive::napi;
 use whichlang::{detect_language as detect_vendor, Lang as Lang_vendor};
